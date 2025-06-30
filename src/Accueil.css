@@ -52,7 +52,6 @@ border-radius: 90%;
    margin: 2rem 2rem;
 }
 .div_presentation_carteproduit{
-   border: black solid dotted;
    background-color: rgb(255, 255, 255);
    margin-top: 1rem;
    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
