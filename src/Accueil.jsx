@@ -1,8 +1,9 @@
 
+import { Link } from 'react-router-dom';
 import './Accueil.css';
 function Accueil() {
   return (
-    <main>
+    <div>
         <section className="hero_presentation">
            <div className="banniere_page_accueil"   style={
             
@@ -24,71 +25,95 @@ function Accueil() {
             <div className="div_titre_ligne_portes">
               <h3 className="titre_ligne_portes">Nos portes</h3>
             </div>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/porte-classique-6-panneaux">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/porte_exterieur_style_regulier_canada.png`} />
              <p className="texte_nom_produit_grid_presentation">Porte Classique 6 Panneaux</p>
              <p className="texte_nom_materiau_grid_presentation">(Acier)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/porte-elegance-arrondie">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/porte_exterieur_style_regulier_canada_3.png`} />
              <p className="texte_nom_produit_grid_presentation">Porte Élégance Arrondie</p>
              <p className="texte_nom_materiau_grid_presentation">(Acier)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/porte-vitree-pleine-moderne">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/porte_exterieur_style_regulier_canada_2.png`} />
              <p className="texte_nom_produit_grid_presentation">Porte Vitrée Pleine Moderne</p>
              <p className="texte_nom_materiau_grid_presentation"> (Acier avec verre trempé)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/porte-demi-lune-classique">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/porte_exterieur_style_regulier_canada_4.png`} />
              <p className="texte_nom_produit_grid_presentation">Porte Demi-Lune Classique</p>
              <p className="texte_nom_materiau_grid_presentation">(Acier)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/porte-vision-depolie">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/porte_exterieur_style_regulier_canada_5.png`} />
              <p className="texte_nom_produit_grid_presentation">Porte Vision Dépolie</p>
              <p className="texte_nom_materiau_grid_presentation">(Acier avec verre givré)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/porte-majestique-a-arches">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/porte_exterieur_style_regulier_canada_6.png`} />
              <p className="texte_nom_produit_grid_presentation">Porte Majestique à Arches</p>
              <p className="texte_nom_materiau_grid_presentation">(Acier renforcé)</p>
             </div>
+            </Link>
           </div>
           <div className="div_presentation_listesfenetres">
             <div className="div_titre_ligne_fenetres">
               <h3 className="titre_ligne_fenetres">Nos fenetres</h3>
             </div>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/fenetre-auvent">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/fenetre_exterieur_auvent_regulier_canada.png`} />
              <p className="texte_nom_produit_grid_presentation">Fenetre à auvent</p>
              <p className="texte_nom_materiau_grid_presentation">(PVC)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/fenetre-guillotine">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/fenetre_exterieur_guillotine_regulier_canada.png`} />
              <p className="texte_nom_produit_grid_presentation">Fenetre guillotine</p>
              <p className="texte_nom_materiau_grid_presentation">(PVC)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/fenetre-battante">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/fenetre_exterieur_battant_regulier_canada.png`} />
              <p className="texte_nom_produit_grid_presentation">Fenetre battant</p>
              <p className="texte_nom_materiau_grid_presentation">(PVC)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/fenetre-coulissante">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/fenetre_exterieur_coulissante_regulier_canada.png`} />
              <p className="texte_nom_produit_grid_presentation">Fenetre coulissante</p>
              <p className="texte_nom_materiau_grid_presentation">(PVC)</p>
             </div>
+            </Link>
+            <Link to="/Ecommerce_siteweb_projet_seg3525/produit/fenetre-architecturale">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/fenetre_exterieur_architecturale_regulier_canada.png`} />
              <p className="texte_nom_produit_grid_presentation">Fenetre architecturale</p>
              <p className="texte_nom_materiau_grid_presentation">(PVC ou hybride)</p>
             </div>
+            </Link>
+             <Link to="/Ecommerce_siteweb_projet_seg3525/produit/fenetre-basculante">
             <div className="div_presentation_carteproduit">
              <img className="img_presentation_carteproduit" src={`${process.env.PUBLIC_URL}/images/fenetre_exterieur_basculante_regulier_canada.png`} />
              <p className="texte_nom_produit_grid_presentation">Fenetre basculante</p>
              <p className="texte_nom_materiau_grid_presentation">(PVC renforcé)</p>
             </div>
+            </Link>
           </div>
           </div>
         </section>
@@ -99,10 +124,9 @@ function Accueil() {
             Produits conçus pour le climat canadien. Qualité locale, installation rapide et service attentionné.  
             Choisissez la sécurité, le style et la durabilité avec Portes & Fenêtres.
             </p>
-
           </div>
         </section>
-    </main>
+    </div>
   );
 }
 

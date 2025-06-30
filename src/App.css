@@ -1,50 +1,60 @@
-body, html {
-  overflow-x: hidden;
+html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-ul{
+main {
+  flex: 1;
+}
+.app_div {
   display: flex;
-  justify-content: center;
-  gap:10%;
-  list-style-type: none;
-  padding: 2rem;
-  margin: 0 0;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header{
-    background-color: #0F2C59;
+
+ul {
+     display: flex;
+     justify-content: center;
+     gap: 10%;
+     list-style-type: none;
+     padding: 2rem;
+     margin: 0 0;
 }
 
-.lien_header{
+header {
+     background-color: #0F2C59;
+}
+
+.lien_header {
      color: #F7F7F7;
-     padding:1rem;
-     cursor:pointer;
+     padding: 1rem;
+     cursor: pointer;
      text-decoration: none;
 }
 
-.lien_header:hover{
+.lien_header:hover {
      color: #fdfdfd;
      background-color: #1a4d9a;
      border-radius: 12px;
 }
 
-.lien_header:active{
+.lien_header:active {
      color: #fdfdfd;
      background-color: #366cbd;
      border-radius: 12px;
 }
 
 
-footer{
-    background-color: #0F2C59;
+footer {
+     background-color: #0F2C59;
 }
 
 
-.paragraph_droits_auteurs_footer{
-     margin:0;
+.paragraph_droits_auteurs_footer {
+     margin: 0;
      text-align: center;
-     color:#fdfdfd;
-     padding:2rem;
+     color: #fdfdfd;
+     padding: 2rem;
 }
