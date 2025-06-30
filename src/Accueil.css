@@ -14,3 +14,104 @@
    color: white;
    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
+
+.sous_titre_page_accueil_banniere{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   color: white;
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+   text-align: center;
+}
+.div_titres_page_accueil_banniere{
+background-color: rgba(0, 0, 0, 0.6);
+padding: 1rem 3rem;
+border-radius: 90%;
+} 
+
+.div_presentation_listesportes{
+   display: flex;
+   gap:1%;
+}
+.div_presentation_listesfenetres{
+   display: flex;
+   gap:1%;
+   
+}
+.div_presentation_gridproduits{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #F5F5F5;
+   padding: 5rem 0;
+   border-radius: 40px;
+   overflow: hidden;
+   margin: 4rem 0;
+
+}
+.section_presentation_produits{
+   margin: 2rem 2rem;
+}
+.div_presentation_carteproduit{
+   border: black solid dotted;
+   background-color: rgb(255, 255, 255);
+   margin-top: 1rem;
+   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.img_presentation_carteproduit{
+   max-height: 300px;
+   max-width: 200px;
+   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.div_titre_ligne_portes{
+   display: flex;
+   align-items: center;
+}
+
+.div_titre_ligne_fenetres{
+   display: flex;
+   align-items: center;
+}
+.titre_ligne_portes{
+   font-family:'Times New Roman', Times, serif;
+   font-weight: 600;
+   padding: 1rem;
+   color: #0F2C59;
+}
+.titre_ligne_fenetres{
+   font-family:'Times New Roman', Times, serif;
+   font-weight: 600;
+   padding: 0.6rem;
+   color: #0F2C59;
+}
+.titre_presentation_produits_grid{
+   color: #0F2C59;
+   text-align: center;
+   font-family:'Times New Roman', Times, serif;
+   font-weight: 400;
+   padding: 2rem;
+   font-size: 30px
+}
+
+.texte_nom_produit_grid_presentation{
+  color: #333;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 600;
+}
+.texte_nom_materiau_grid_presentation{
+  color: #333;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.div_a_propos_court{
+   color:#154081;
+   text-align: center;
+   padding:4rem;
+   margin: 10rem;
+   background-color: #eaeaea;
+}

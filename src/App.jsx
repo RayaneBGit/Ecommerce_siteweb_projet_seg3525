@@ -36,6 +36,9 @@ function App() {
         </nav>
       </header>
       <Accueil></Accueil>
+      <footer>
+        <p className="paragraph_droits_auteurs_footer">© 2025 Rayane B. & Yasmine B. Tous droits réservés.</p>
+      </footer>
     </div>
   );
 }
