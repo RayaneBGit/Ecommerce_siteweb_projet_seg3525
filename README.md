@@ -1,4 +1,22 @@
 
+## Sauvegarder ses changements sur le repo github 
+ouvrir git bash
+cd "PATH_TO_YOUR_PROJECT"
+git add .
+git commit -m "YOUR_MESSAGE"
+git push
+
+## Tuto pour update et accéder le site web public de ce projet:
+# 1. Faire ces manipulations de commandes pour update le code dans le site web: 
+ouvrir powershell
+cd "PATH_TO_YOUR_PROJECT"
+npm run deploy
+
+# 2. Acceder à notre site web dans ce lien:
+https://rayanebgit.github.io/Ecommerce_siteweb_projet_seg3525/
+
+
+
 ## Palettes de couleurs pour le site web
 
 # Couleur principale : #0F2C59

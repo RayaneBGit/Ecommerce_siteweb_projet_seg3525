@@ -13,9 +13,11 @@ export function PanierProvider({ children }) {
     function ajouterAuPanier(produit) {
         setPanier((prev) => [...prev, produit]);
     }
-
+    function supprimerDuPanier(produit_a_supprimer){
+        setPanier(panier.filter(autreproduit=>autreproduit !== produit_a_supprimer))
+    }
     return (
-        <PanierContext.Provider value={{ panier, ajouterAuPanier }}>
+        <PanierContext.Provider value={{ panier, ajouterAuPanier, supprimerDuPanier }}>
             {children}
         </PanierContext.Provider>
     );

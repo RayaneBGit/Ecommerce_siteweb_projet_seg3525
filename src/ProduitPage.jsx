@@ -2,6 +2,7 @@
 import './ProduitPage.css';
 import { useParams } from 'react-router-dom';
 import { usePanier } from './PanierContext';
+import { useState } from 'react';
 function ProduitPage() {
 
     const produits = {
@@ -243,16 +244,23 @@ function ProduitPage() {
 
     }
 
-    const { ajouterAuPanier } = usePanier();
 
     const { slug } = useParams();
 
     const produit = produits[slug];
 
-    function ajouterPanierProduit() {
-        ajouterAuPanier(produit)
-        console.log("Produit ajouté :", produit);
-    }
+    const [couleurSelectionnee, setCouleurSelectionnee] = useState(produit.couleurs[0]);
+
+    const { ajouterAuPanier } = usePanier();
+
+
+   function ajouterPanierProduit() {
+    const produitAvecCouleur = {
+        ...produit,
+        couleurChoisie: couleurSelectionnee
+    };
+    ajouterAuPanier(produitAvecCouleur);
+}
 
     if (!produit) {
         return <h1>Page introuvable</h1>
@@ -264,6 +272,17 @@ function ProduitPage() {
             <img src={produit.image} />
             <p>{produit.description}</p>
             <p>Prix : {produit.prix} $</p>
+            <h3>Choisisez une couleur: </h3>
+            <div className="radio-couleurs">
+                {produit.couleurs.map((couleur, index) => (
+                    <label key={index}>
+                        <input type="radio"
+                            checked={couleurSelectionnee == couleur}
+                            onChange={() => setCouleurSelectionnee(couleur)}></input>
+                        {couleur}
+                    </label>
+                ))}
+            </div>
             <input type="button" onClick={ajouterPanierProduit} value="Ajouter au panier"></input>
         </div>
 

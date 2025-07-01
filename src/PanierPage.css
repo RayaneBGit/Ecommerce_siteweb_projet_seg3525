@@ -1,0 +1,28 @@
+.panier-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.titre_page_panier {
+    text-align: center;
+}
+
+.description_page_panier {
+    text-align: center;
+}
+
+.carte-produit {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.image_produit_panier {
+    height: 200px;
+    border: 1px solid #ccc;
+}
