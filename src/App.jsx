@@ -3,6 +3,9 @@ import './App.css';
 import {  Routes, Route, Link } from 'react-router-dom';
 import ProduitPage from './ProduitPage'; 
 import PanierPage from './PanierPage';
+import PaiementPage from './PaiementPage';
+import ConfirmationPage from './Confirmation';
+import ErrorPage from './ErrorPage';
 function App() {
   return (
     <div className="app_div">
@@ -42,6 +45,9 @@ function App() {
         <Route path="/Ecommerce_siteweb_projet_seg3525" element={<Accueil/>}/>
         <Route path="/Ecommerce_siteweb_projet_seg3525/produit/:slug" element={<ProduitPage/>}/>
         <Route path="/Ecommerce_siteweb_projet_seg3525/panier" element={<PanierPage/>}/>
+        <Route path="/Ecommerce_siteweb_projet_seg3525/paiement" element={<PaiementPage/>}></Route>
+        <Route path="/Ecommerce_siteweb_projet_seg3525/confirmation" element={<ConfirmationPage/>}></Route>
+        <Route path="*" element={<ErrorPage/>}></Route>
       </Routes>
       </main>
       <footer>

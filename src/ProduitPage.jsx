@@ -252,6 +252,7 @@ function ProduitPage() {
     const [couleurSelectionnee, setCouleurSelectionnee] = useState(produit.couleurs[0]);
 
     const { ajouterAuPanier } = usePanier();
+    
 
 
    function ajouterPanierProduit() {

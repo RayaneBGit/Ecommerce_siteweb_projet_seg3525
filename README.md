@@ -7,6 +7,7 @@ git commit -m "YOUR_MESSAGE"
 git push
 
 ## Tuto pour update et accéder le site web public de ce projet:
+
 # 1. Faire ces manipulations de commandes pour update le code dans le site web: 
 ouvrir powershell
 cd "PATH_TO_YOUR_PROJECT"
