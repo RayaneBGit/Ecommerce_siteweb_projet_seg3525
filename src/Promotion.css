@@ -10,12 +10,6 @@
   gap: 20px;
 }
 
-.promotion-card {
-  border: 1px solid #ccc;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
 
 .promotion-card h2 {
   margin-top: 0;
@@ -35,4 +29,28 @@
   margin-top: 30px;
   font-weight: bold;
   font-size: 1.1em;
+}
+.promotion-img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.promotion-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.promotion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
