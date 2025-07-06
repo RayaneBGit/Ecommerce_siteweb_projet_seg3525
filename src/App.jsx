@@ -6,6 +6,10 @@ import PanierPage from './PanierPage';
 import PaiementPage from './PaiementPage';
 import ConfirmationPage from './Confirmation';
 import ErrorPage from './ErrorPage';
+import Contact from './Contact';
+import Apropos from './Apropos';
+import Promotion from './Promotion';
+
 function App() {
   return (
     <div className="app_div">
@@ -48,6 +52,9 @@ function App() {
         <Route path="/Ecommerce_siteweb_projet_seg3525/paiement" element={<PaiementPage/>}></Route>
         <Route path="/Ecommerce_siteweb_projet_seg3525/confirmation" element={<ConfirmationPage/>}></Route>
         <Route path="*" element={<ErrorPage/>}></Route>
+        <Route path="/Ecommerce_siteweb_projet_seg3525/contact" element={<Contact />} />
+        <Route path="/Ecommerce_siteweb_projet_seg3525/apropos" element={<Apropos />} />
+        <Route path="/Ecommerce_siteweb_projet_seg3525/promotion" element={<Promotion />} />
       </Routes>
       </main>
       <footer>
